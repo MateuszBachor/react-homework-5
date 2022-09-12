@@ -24,7 +24,6 @@ const MoviesGallery = ({ arrayMovie }) => {
             }
             alt=""
           />
-          <span>{movie.original_title}</span>
         </div>
       </Link>
     );
