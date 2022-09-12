@@ -30,7 +30,7 @@ const MovieReviews = id => {
       );
     });
   } else {
-    return <div style={(color: 'white')}>No reviews available</div>;
+    return <div style={{ color: 'white' }}>No reviews available</div>;
   }
 };
 
