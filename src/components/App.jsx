@@ -9,7 +9,6 @@ import SharedLayout from './SharedLayout/SharedLayout';
 import MovieCast from './MoviePage/MovieCast/MovieCast';
 import MovieReviews from './MoviePage/MovieReviews/MovieReviews';
 import NotFound from './NotFound/NotFound';
-import styles from './App.module.css';
 export const App = () => {
   const [arrayMovies, setarrayMovies] = useState([]);
   const showMoviesArray = async () => {
