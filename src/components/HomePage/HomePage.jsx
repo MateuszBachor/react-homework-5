@@ -28,7 +28,6 @@ const HomePage = () => {
                   }`}
                   alt=""
                 />
-                {movie.title || movie.name}
               </div>
             </Link>
           );
