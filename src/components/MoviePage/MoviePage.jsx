@@ -16,7 +16,6 @@ const MoviePage = id => {
   const { movieId } = useParams();
   const getMovie = async () => {
     const response = await fetchMovies(`/movie/${movieId}`);
-    console.log(response);
     setMovie(() => response);
     setProduction(() => response.production_countries);
   };
@@ -49,7 +48,7 @@ const MoviePage = id => {
           {production.map(p => {
             return <span>{p.name}</span>;
           })}
-          <span>User Score: {movie.vote_average * 10}%</span>
+          <span>User Score: {(movie.vote_average * 10).toFixed(1)}%</span>
           <span>{movie.overview}</span>
         </div>
       </div>

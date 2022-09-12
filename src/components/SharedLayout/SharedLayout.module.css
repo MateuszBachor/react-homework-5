@@ -1,8 +1,16 @@
 nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .navLink{
     margin: 20px;
     margin-right: 40px;
+}
+a{
+   
+    margin: 20px;
+
+}
+.LinkContainer{
+    display: flex;
 }
