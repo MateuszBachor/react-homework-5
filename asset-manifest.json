@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/react-homework-5/static/css/main.7acaea2f.css",
-    "main.js": "/react-homework-5/static/js/main.fb411933.js",
+    "main.js": "/react-homework-5/static/js/main.3d468830.js",
     "static/css/749.aba7fd61.chunk.css": "/react-homework-5/static/css/749.aba7fd61.chunk.css",
     "static/js/749.b98845f7.chunk.js": "/react-homework-5/static/js/749.b98845f7.chunk.js",
     "static/css/669.a36f167d.chunk.css": "/react-homework-5/static/css/669.a36f167d.chunk.css",
     "static/js/669.ca98cd3d.chunk.js": "/react-homework-5/static/js/669.ca98cd3d.chunk.js",
-    "static/css/641.502673f6.chunk.css": "/react-homework-5/static/css/641.502673f6.chunk.css",
+    "static/css/641.c333aa0b.chunk.css": "/react-homework-5/static/css/641.c333aa0b.chunk.css",
     "static/js/641.a054ba6d.chunk.js": "/react-homework-5/static/js/641.a054ba6d.chunk.js",
     "static/css/40.0c84cbec.chunk.css": "/react-homework-5/static/css/40.0c84cbec.chunk.css",
     "static/js/40.de96e09b.chunk.js": "/react-homework-5/static/js/40.de96e09b.chunk.js",
@@ -18,12 +18,12 @@
     "static/js/494.11e96ef1.chunk.js": "/react-homework-5/static/js/494.11e96ef1.chunk.js",
     "index.html": "/react-homework-5/index.html",
     "main.7acaea2f.css.map": "/react-homework-5/static/css/main.7acaea2f.css.map",
-    "main.fb411933.js.map": "/react-homework-5/static/js/main.fb411933.js.map",
+    "main.3d468830.js.map": "/react-homework-5/static/js/main.3d468830.js.map",
     "749.aba7fd61.chunk.css.map": "/react-homework-5/static/css/749.aba7fd61.chunk.css.map",
     "749.b98845f7.chunk.js.map": "/react-homework-5/static/js/749.b98845f7.chunk.js.map",
     "669.a36f167d.chunk.css.map": "/react-homework-5/static/css/669.a36f167d.chunk.css.map",
     "669.ca98cd3d.chunk.js.map": "/react-homework-5/static/js/669.ca98cd3d.chunk.js.map",
-    "641.502673f6.chunk.css.map": "/react-homework-5/static/css/641.502673f6.chunk.css.map",
+    "641.c333aa0b.chunk.css.map": "/react-homework-5/static/css/641.c333aa0b.chunk.css.map",
     "641.a054ba6d.chunk.js.map": "/react-homework-5/static/js/641.a054ba6d.chunk.js.map",
     "40.0c84cbec.chunk.css.map": "/react-homework-5/static/css/40.0c84cbec.chunk.css.map",
     "40.de96e09b.chunk.js.map": "/react-homework-5/static/js/40.de96e09b.chunk.js.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.fb411933.js"
+    "static/js/main.3d468830.js"
   ]
 }
