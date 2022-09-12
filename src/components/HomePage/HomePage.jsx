@@ -8,7 +8,6 @@ const HomePage = () => {
 
   const showMoviesArray = async () => {
     const response = await fetchMovies('/trending/all/day');
-    console.log(response.results);
     setarrayMovies(() => response.results);
   };
 
