@@ -1,14 +1,19 @@
 import React from 'react';
+import { lazy } from 'react';
 import fetchMovies from './Service/Service';
 import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import HomePage from './HomePage/HomePage';
-import MoviePage from './MoviePage/MoviePage';
-import SearchMoviePage from './SearchMoviePage/SearchMoviePage';
-import SharedLayout from './SharedLayout/SharedLayout';
-import MovieCast from './MoviePage/MovieCast/MovieCast';
-import MovieReviews from './MoviePage/MovieReviews/MovieReviews';
-import NotFound from './NotFound/NotFound';
+
+const HomePage = lazy(() => import('./HomePage/HomePage'));
+const MoviePage = lazy(() => import('./MoviePage/MoviePage'));
+const SearchMoviePage = lazy(() => import('./SearchMoviePage/SearchMoviePage'));
+const SharedLayout = lazy(() => import('./SharedLayout/SharedLayout'));
+const MovieCast = lazy(() => import('./MoviePage/MovieCast/MovieCast'));
+const MovieReviews = lazy(() =>
+  import('./MoviePage/MovieReviews/MovieReviews')
+);
+const NotFound = lazy(() => import('./NotFound/NotFound'));
+
 export const App = () => {
   const [arrayMovies, setarrayMovies] = useState([]);
   const showMoviesArray = async () => {
