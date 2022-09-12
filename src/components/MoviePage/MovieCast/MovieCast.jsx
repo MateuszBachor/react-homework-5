@@ -19,8 +19,6 @@ const MovieCast = ({ id }) => {
     fetchData();
   }, []);
 
-  console.log(castArray);
-
   return (
     <div>
       <ShowCast array={castArray} />

@@ -1,0 +1,32 @@
+.MoviePageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1c1e27;
+    padding: 15px;
+
+}
+.infoCard{
+    display: flex;
+    color: wheat;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.LinkContainer{
+    display: flex;
+    margin: 30px;
+    margin-left: 45%;
+
+}
+span{
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+button{
+    margin: 20px;
+    background-color: #1c1e27;
+}

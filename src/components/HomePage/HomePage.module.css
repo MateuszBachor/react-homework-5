@@ -1,0 +1,45 @@
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+img{
+    width: 350px;
+    height: 350px;
+}
+.HomePageTitle{
+    justify-content: center;
+    text-align: center;
+    font-size: 50px;
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+
+}
+.HomePageMovies{
+     
+    display: grid;
+    max-width: calc(80vw - 48px);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 16px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+.MovieCard{
+    color: whitesmoke;
+    max-width: 350px;
+    margin: 10px;
+   
+}
+.HomePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1c1e27;
+}

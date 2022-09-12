@@ -1,0 +1,9 @@
+.readmore{
+    color: wheat;
+}
+button{
+    border: none;
+    color: gray;
+    background-color: black;
+    cursor: pointer;
+}

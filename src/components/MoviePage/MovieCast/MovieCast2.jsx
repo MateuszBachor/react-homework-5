@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './MovieCast.module.css';
 
 const ShowCast = ({ array }) => {
   const isFoto = elem => {
@@ -9,7 +10,7 @@ const ShowCast = ({ array }) => {
   };
   return array.map(elem => {
     return (
-      <div key={elem.id}>
+      <div className={styles.castCard} key={elem.id}>
         {' '}
         <img
           style={{ width: '200px', height: '200px' }}
@@ -20,7 +21,9 @@ const ShowCast = ({ array }) => {
           }
           alt={elem.name}
         />
-        {elem.character} - {elem.name}
+        <span>
+          {elem.character} - {elem.name}
+        </span>
       </div>
     );
   });

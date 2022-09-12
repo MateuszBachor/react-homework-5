@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(245, 241, 237);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+    
+    justify-content: center;
+    width: 100%;
+}

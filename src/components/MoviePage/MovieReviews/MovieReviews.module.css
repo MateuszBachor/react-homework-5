@@ -1,0 +1,13 @@
+span{
+    color: wheat;
+    margin: 0;
+}
+.reviewCard{
+    display: flex;
+    padding: 30px;
+    
+}
+.author{
+    min-width: 150px;
+    color: blue;
+}

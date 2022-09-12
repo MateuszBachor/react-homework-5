@@ -1,0 +1,5 @@
+.MovieCard{
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100vw - 48px);
+}
