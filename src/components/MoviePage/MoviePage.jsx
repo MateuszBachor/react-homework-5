@@ -23,7 +23,7 @@ const MoviePage = id => {
 
   useEffect(() => {
     getMovie();
-  }, []);
+  });
   const CastActive = () => {
     setIsCastActive(() => !isCastActive);
     setIsReviewsActive(() => false);

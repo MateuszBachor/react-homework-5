@@ -19,7 +19,7 @@ const MovieReviews = id => {
       getReviews();
     };
     fetchData();
-  }, []);
+  });
   if (reviews.length >= 1) {
     return reviews.map(review => {
       return (
