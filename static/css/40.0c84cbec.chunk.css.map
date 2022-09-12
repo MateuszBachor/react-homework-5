@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/40.0c84cbec.chunk.css","mappings":"AAAA,IACI,YAAa,CACb,wBACJ,CACA,6BAEI,0BACJ","sources":["components/SharedLayout/SharedLayout.module.css"],"sourcesContent":["nav{\n    display: flex;\n    justify-content: flex-end;\n}\n.navLink{\n    margin: 20px;\n    margin-right: 40px;\n}"],"names":[],"sourceRoot":""}
