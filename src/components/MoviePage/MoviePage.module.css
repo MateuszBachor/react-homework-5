@@ -9,6 +9,7 @@
 .infoCard{
     display: flex;
     color: wheat;
+
 }
 .info{
     display: flex;
@@ -29,4 +30,8 @@ span{
 button{
     margin: 20px;
     background-color: #1c1e27;
+    font-size: large;
+}
+a :hover{
+    color: bisque;
 }

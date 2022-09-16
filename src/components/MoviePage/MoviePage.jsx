@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import MovieCast from './MovieCast/MovieCast';
 import MovieReviews from './MovieReviews/MovieReviews';
+import Readmore from './MovieReviews/Readmore';
 import styles from './MoviePage.module.css';
 
 const MoviePage = id => {
