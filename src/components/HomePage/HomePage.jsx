@@ -14,6 +14,7 @@ const HomePage = () => {
   useEffect(() => {
     showMoviesArray();
   }, []);
+
   return (
     <div className={styles.HomePage}>
       <span className={styles.HomePageTitle}>The most popular movies</span>
@@ -23,6 +24,7 @@ const HomePage = () => {
             <Link to={`/movies/${movie.id}`}>
               <div className={styles.MovieCard} key={movie.id}>
                 <img
+                  className={styles.imgHomePage}
                   src={`https://image.tmdb.org/t/p/w500/${
                     movie.poster_path || movie.backdrop_path
                   }`}

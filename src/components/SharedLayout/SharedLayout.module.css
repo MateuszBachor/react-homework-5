@@ -7,9 +7,9 @@ nav{
     margin-right: 40px;
 }
 a{
-   
+   color: black;
     margin: 20px;
-
+    font-size: 30px;
 }
 .LinkContainer{
     display: flex;

@@ -13,13 +13,12 @@ const MovieReviews = id => {
     const fetchData = () => {
       const getReviews = async () => {
         const response = await fetchMovies(`/movie/${movieId}/reviews`);
-        console.log(response);
         setReviews(() => response.results);
       };
       getReviews();
     };
     fetchData();
-  });
+  }, [reviews, movieId]);
   if (reviews.length >= 1) {
     return reviews.map(review => {
       return (

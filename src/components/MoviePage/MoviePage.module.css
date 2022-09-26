@@ -27,11 +27,17 @@ span{
     margin-left: 30px;
 
 }
-button{
+.btnDetailPage{
     margin: 20px;
     background-color: #1c1e27;
     font-size: large;
-}
-a :hover{
+    border: none;
     color: bisque;
+    cursor: pointer;
+}
+.btnDetailPage:hover{
+    color: white;
+}
+.MoiveImg{
+    max-height: 550px;
 }

@@ -11,7 +11,7 @@ const Readmore = ({ children }) => {
   return (
     <div className={styles.readmore}>
       {isReadMoreShow ? children : children.substring(0, 150)}
-      <button onClick={toggleBtn}>
+      <button className={styles.btnReadMore} onClick={toggleBtn}>
         {isReadMoreShow ? 'Read less' : '...Read More'}{' '}
       </button>
     </div>

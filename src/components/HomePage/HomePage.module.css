@@ -4,9 +4,9 @@ a{
     color: black;
     font-size: 30px;
 }
-img{
-    width: 350px;
-    height: 350px;
+.imgHomePage{
+    width: 250px;
+    height: 100%;
 }
 .HomePageTitle{
     justify-content: center;

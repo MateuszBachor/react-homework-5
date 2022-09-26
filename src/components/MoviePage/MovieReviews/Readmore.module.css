@@ -1,9 +1,10 @@
 .readmore{
     color: wheat;
 }
-button{
+.btnReadMore{
     border: none;
     color: gray;
-    background-color: black;
+    background-color: #1c1e27;
+    font-size: 14px;
     cursor: pointer;
 }
