@@ -15,8 +15,11 @@ const MoviePage = () => {
   const { movieId } = useParams();
 
   useEffect(() => {
+    // try {
     const getMovie = async () => {
-      const response = await fetchMovies(`/movie/${movieId}`);
+      let response = await fetchMovies(`/movie/${movieId}`);
+      console.log(response);
+      if (response === undefined) response = await fetchMovies(`/movie/894205`);
       setMovie(() => response);
       setProduction(() => response.production_countries);
     };
@@ -30,45 +33,49 @@ const MoviePage = () => {
     setIsReviewsActive(() => !isReviewsActive);
     setIsCastActive(() => false);
   };
+  console.log(movie);
+  if (movie === []) {
+    return <div>asd</div>;
+  } else {
+    return (
+      <div className={styles.MoviePageContainer}>
+        <div className={styles.infoCard}>
+          <img
+            className={styles.MoiveImg}
+            src={
+              `https://image.tmdb.org/t/p/w500/${
+                movie.poster_path || movie.backdrop_path
+              }` ||
+              'https://thumbs.dreamstime.com/b/no-image-available-icon-photo-camera-flat-vector-illustration-132483141.jpg'
+            }
+            alt={movie.title || movie.name}
+          />
+          <div className={styles.info}>
+            <span>{movie.title || movie.name}</span>
 
-  return (
-    <div className={styles.MoviePageContainer}>
-      <div className={styles.infoCard}>
-        <img
-          className={styles.MoiveImg}
-          src={
-            `https://image.tmdb.org/t/p/w500/${
-              movie.poster_path || movie.backdrop_path
-            }` ||
-            'https://thumbs.dreamstime.com/b/no-image-available-icon-photo-camera-flat-vector-illustration-132483141.jpg'
-          }
-          alt={movie.title || movie.name}
-        />
-        <div className={styles.info}>
-          <span>{movie.title || movie.name}</span>
-
-          {production.map(p => {
-            return <span>{p.name}</span>;
-          })}
-          <span>User Score: {(movie.vote_average * 10).toFixed(1)}%</span>
-          <span>{movie.overview}</span>
+            {production.map(p => {
+              return <span>{p.name}</span>;
+            })}
+            <span>User Score: {(movie.vote_average * 10).toFixed(1)}%</span>
+            <span>{movie.overview}</span>
+          </div>
         </div>
+        <div className={styles.LinkContainer}>
+          <Link to="cast">
+            <button className={styles.btnDetailPage} onClick={CastActive}>
+              Cast
+            </button>
+          </Link>
+          <Link to="reviews">
+            <button className={styles.btnDetailPage} onClick={ReviewsActive}>
+              Reviews
+            </button>
+          </Link>
+        </div>
+        {isCastActive && <MovieCast id={movieId} />}
+        {isReviewsActive && <MovieReviews id={movieId} />}
       </div>
-      <div className={styles.LinkContainer}>
-        <Link to="cast">
-          <button className={styles.btnDetailPage} onClick={CastActive}>
-            Cast
-          </button>
-        </Link>
-        <Link to="reviews">
-          <button className={styles.btnDetailPage} onClick={ReviewsActive}>
-            Reviews
-          </button>
-        </Link>
-      </div>
-      {isCastActive && <MovieCast id={movieId} />}
-      {isReviewsActive && <MovieReviews id={movieId} />}
-    </div>
-  );
+    );
+  }
 };
 export default MoviePage;
