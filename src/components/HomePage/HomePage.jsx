@@ -7,7 +7,7 @@ const HomePage = () => {
   const [arrayMovies, setarrayMovies] = useState([]);
 
   const showMoviesArray = async () => {
-    const response = await fetchMovies('/trending/all/day');
+    const response = await fetchMovies('/trending/movie/day');
     setarrayMovies(() => response.results);
   };
 
