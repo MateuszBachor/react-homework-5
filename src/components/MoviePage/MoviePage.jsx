@@ -15,13 +15,18 @@ const MoviePage = () => {
   const { movieId } = useParams();
 
   useEffect(() => {
-    // try {
     const getMovie = async () => {
       let response = await fetchMovies(`/movie/${movieId}`);
       console.log(response);
-      if (response === undefined) response = await fetchMovies(`/movie/894205`);
-      setMovie(() => response);
-      setProduction(() => response.production_countries);
+      if (response === undefined) {
+        response = await fetchMovies(`/trending/all/day`);
+        console.log(response.results.find(id => id.id == movieId));
+        const movie = response.results.find(id => id.id == movieId);
+        setMovie(() => movie);
+      } else {
+        setMovie(() => response);
+        setProduction(() => response.production_countries);
+      }
     };
     getMovie();
   }, [movieId]);
