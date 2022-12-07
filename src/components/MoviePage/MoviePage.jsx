@@ -20,8 +20,12 @@ const MoviePage = () => {
       console.log(response);
       if (response === undefined) {
         response = await fetchMovies(`/trending/all/day`);
-        console.log(response.results.find(id => id.id == movieId));
-        const movie = response.results.find(id => id.id == movieId);
+        console.log(
+          response.results.find(id => id.id.toString() === movieId.toString())
+        );
+        const movie = response.results.find(
+          id => id.id.toString() === movieId.toString()
+        );
         setMovie(() => movie);
       } else {
         setMovie(() => response);
